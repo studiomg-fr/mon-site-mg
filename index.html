@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MG Studio — Infographie 3D Architecture & Immobilier</title>
+  <meta name="description" content="Studio d'infographie 3D haut de gamme spécialisé en architecture et immobilier. Rendus ultra-réalistes, plans sur-mesure, délais maîtrisés." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">
+        <span class="logo-mg">MG</span>
+        <span class="logo-studio">Studio</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#methode" class="nav-link">Méthode</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Obtenir un devis</a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=90&auto=format&fit=crop"
+          alt="Architecture moderne — façade de verre"
+          class="hero-img"
+          loading="eager"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <p class="hero-eyebrow fade-up">Infographie 3D · Architecture & Immobilier</p>
+        <h1 class="hero-title fade-up delay-1">
+          Visualisez le futur<br />de vos espaces<br />
+          <em>avec une précision absolue.</em>
+        </h1>
+        <p class="hero-sub fade-up delay-2">
+          Du concept au rendu photoréaliste — nous donnons vie à vos projets<br class="hide-mobile" />
+          avant même que la première pierre soit posée.
+        </p>
+        <div class="hero-actions fade-up delay-3">
+          <a href="#portfolio" class="btn btn-primary btn-lg">Découvrir nos réalisations</a>
+          <a href="#contact" class="btn btn-ghost btn-lg">Nous contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll fade-up delay-4">
+        <span>Défiler</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== POUR QUI ===== -->
+    <section id="cible" class="section cible">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-eyebrow">Notre clientèle</p>
+          <h2 class="section-title">Des solutions sur-mesure<br />pour les visionnaires</h2>
+          <p class="section-intro">Que vous conceviez, commercialisez ou transformiez des espaces, nos rendus deviennent votre argument le plus puissant.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card fade-up delay-1">
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 4L36 14V36H4V14L20 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <rect x="14" y="24" width="12" height="12" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Architectes</h3>
+            <p class="card-text">Présentez vos projets à vos clients avec des rendus qui transcendent les plans et maquettes traditionnels.</p>
+          </article>
+
+          <article class="card fade-up delay-2">
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="4" y="16" width="32" height="20" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M4 16L20 4L36 16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M16 36V26H24V36" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Promoteurs immobiliers</h3>
+            <p class="card-text">Commercialisez vos programmes sur plan, avant construction, grâce à des visuels qui déclenchent l'acte d'achat.</p>
+          </article>
+
+          <article class="card fade-up delay-3">
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 12V20L26 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Marchands de biens</h3>
+            <p class="card-text">Valorisez vos actifs en montrant le potentiel d'un bien rénové, bien avant les travaux, pour des ventes plus rapides et plus rentables.</p>
+          </article>
+
+          <article class="card fade-up delay-4">
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 36V20M20 36V12M32 36V24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M4 20L8 16L14 22L20 12L26 18L32 10L36 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Particuliers en rénovation</h3>
+            <p class="card-text">Projetez-vous dans votre futur intérieur pour valider chaque choix — matières, couleurs, agencement — avant de lancer les travaux.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-eyebrow">Ce que nous créons</p>
+          <h2 class="section-title">Nos services</h2>
+        </div>
+
+        <!-- Service 1 -->
+        <div class="service-row fade-up">
+          <div class="service-media">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85&auto=format&fit=crop"
+                alt="Rendu 3D ultra-réaliste d'une villa contemporaine"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-number">01</div>
+          </div>
+          <div class="service-content">
+            <p class="service-tag">Rendu photoréaliste</p>
+            <h3 class="service-title">Rendus 3D<br />Ultra-Réalistes</h3>
+            <p class="service-text">
+              Chaque pixel est le fruit d'une maîtrise technique et d'un regard artistique. Nous restituons la matière, la lumière naturelle et l'atmosphère avec une fidélité qui trouble la frontière entre photographie et image de synthèse.
+            </p>
+            <ul class="service-list">
+              <li>Vues extérieures & intérieures</li>
+              <li>Rendus de nuit et ambiances crépusculaires</li>
+              <li>Images panoramiques 360°</li>
+              <li>Haute résolution jusqu'à 8K</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Demander un rendu</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-row service-row--reverse fade-up">
+          <div class="service-media">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=85&auto=format&fit=crop"
+                alt="Plan architectural sur-mesure en 3D"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-number">02</div>
+          </div>
+          <div class="service-content">
+            <p class="service-tag">Plans & Modélisation</p>
+            <h3 class="service-title">Création de plans<br />sur-mesure</h3>
+            <p class="service-text">
+              De l'esquisse à la maquette numérique complète : nous modélisons vos espaces en 3D avec une précision architecturale, pour une base solide à tous vos rendus et une communication sans ambiguïté avec vos équipes.
+            </p>
+            <ul class="service-list">
+              <li>Plans 2D côtés & annotés</li>
+              <li>Maquettes 3D vectorielles</li>
+              <li>Plans de coupe et d'élévation</li>
+              <li>Intégration BIM sur demande</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Demander un plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-eyebrow">Galerie</p>
+          <h2 class="section-title">Nos dernières réalisations</h2>
+          <p class="section-intro">Chaque projet est une conversation entre la technique et la sensibilité. Laissez les images parler.</p>
+        </div>
+
+        <div class="masonry-grid">
+          <div class="masonry-item fade-up">
+            <div class="masonry-img-wrap">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=85&auto=format&fit=crop" alt="Villa contemporaine rendu 3D" loading="lazy" />
+              <div class="masonry-overlay">
+                <span>Villa Contemporaine</span>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item fade-up delay-1">
+            <div class="masonry-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=85&auto=format&fit=crop" alt="Maison de luxe extérieur" loading="lazy" />
+              <div class="masonry-overlay">
+                <span>Résidence Prestige</span>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item fade-up delay-2">
+            <div class="masonry-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=85&auto=format&fit=crop" alt="Intérieur moderne salon" loading="lazy" />
+              <div class="masonry-overlay">
+                <span>Intérieur Minimaliste</span>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item fade-up">
+            <div class="masonry-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85&auto=format&fit=crop" alt="Bureau architecture moderne" loading="lazy" />
+              <div class="masonry-overlay">
+                <span>Espace Bureau</span>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item fade-up delay-1">
+            <div class="masonry-img-wrap">
+              <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=85&auto=format&fit=crop" alt="Appartement vue terrasse" loading="lazy" />
+              <div class="masonry-overlay">
+                <span>Penthouse Panorama</span>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item fade-up delay-2">
+            <div class="masonry-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&auto=format&fit=crop" alt="Façade immeuble résidentiel" loading="lazy" />
+              <div class="masonry-overlay">
+                <span>Programme Résidentiel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MÉTHODE ===== -->
+    <section id="methode" class="section methode">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-eyebrow">Notre approche</p>
+          <h2 class="section-title">Une méthode rodée,<br />un résultat garanti</h2>
+        </div>
+
+        <div class="methode-grid">
+
+          <!-- Colonne gauche : promesses -->
+          <div class="methode-promises fade-up">
+            <p class="methode-promise-intro">Ce que vous obtenez, systématiquement :</p>
+            <ul class="promise-list">
+              <li>
+                <div class="promise-check">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Forfait 100 % transparent</strong>
+                  <p>Un tarif fixe annoncé dès le devis, sans surprise en cours de route.</p>
+                </div>
+              </li>
+              <li>
+                <div class="promise-check">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>3 à 6 images HD incluses</strong>
+                  <p>Chaque livraison comprend plusieurs angles pour couvrir l'ensemble de votre projet.</p>
+                </div>
+              </li>
+              <li>
+                <div class="promise-check">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Délai maîtrisé : 5 à 6 jours</strong>
+                  <p>Une livraison rapide et fiable, adaptée aux contraintes commerciales de vos clients.</p>
+                </div>
+              </li>
+              <li>
+                <div class="promise-check">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>2 tours de corrections</strong>
+                  <p>Vos retours sont intégrés jusqu'à ce que le résultat soit à la hauteur de votre vision.</p>
+                </div>
+              </li>
+              <li>
+                <div class="promise-check">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Fichiers sources fournis</strong>
+                  <p>Vous restez propriétaire de tous vos visuels, prêts pour l'impression, le web et les réseaux.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne droite : timeline -->
+          <div class="methode-timeline fade-up delay-2">
+            <p class="methode-promise-intro">Le déroulé du projet :</p>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-step">1</span>
+                </div>
+                <div class="timeline-content">
+                  <h4>Brief & Analyse</h4>
+                  <p>Nous recueillons vos plans, références visuelles et intentions pour cadrer précisément le projet.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-step">2</span>
+                </div>
+                <div class="timeline-content">
+                  <h4>Modélisation</h4>
+                  <p>Construction de la maquette 3D fidèle à vos plans, avec validation des volumes avant la phase rendu.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-step">3</span>
+                </div>
+                <div class="timeline-content">
+                  <h4>Rendu & Lumière</h4>
+                  <p>Application des matériaux, calcul des lumières, intégration des végétaux et du contexte environnemental.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-step">4</span>
+                </div>
+                <div class="timeline-content">
+                  <h4>Corrections</h4>
+                  <p>Deux allers-retours pour affiner chaque détail selon vos retours.</p>
+                </div>
+              </div>
+              <div class="timeline-item timeline-item--last">
+                <div class="timeline-marker timeline-marker--gold">
+                  <span class="timeline-step">5</span>
+                </div>
+                <div class="timeline-content">
+                  <h4>Livraison finale</h4>
+                  <p>Fichiers HD complets livrés via lien sécurisé dans les délais convenus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info fade-up">
+            <p class="section-eyebrow">Parlons de votre projet</p>
+            <h2 class="section-title">Prêt à visualiser<br />l'avenir ?</h2>
+            <p class="contact-sub">Chaque grand projet commence par une conversation. Décrivez-nous votre vision — nous vous répondons sous 24 h avec une estimation sans engagement.</p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="1.5"/></svg>
+                <a href="mailto:contact@mg-studio.fr">contact@mg-studio.fr</a>
+              </div>
+              <div class="contact-detail">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.75 12a19.79 19.79 0 01-3-8.58A2 2 0 012.73 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 17z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <a href="tel:+33600000000">+33 6 00 00 00 00</a>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram MG Studio">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn MG Studio">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Behance MG Studio">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h8a4 4 0 010 8H2V6zM2 14h9a4 4 0 010 8H2v-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15 7h7M16 12h6a3 3 0 010 6h-6a3 3 0 010-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form fade-up delay-2" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" placeholder="jean@studio.fr" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Type de projet</label>
+              <div class="select-wrap">
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Sélectionnez un service</option>
+                  <option value="render">Rendu 3D extérieur</option>
+                  <option value="interior">Rendu 3D intérieur</option>
+                  <option value="plan">Plan sur-mesure</option>
+                  <option value="tour">Visite virtuelle 360°</option>
+                  <option value="other">Autre demande</option>
+                </select>
+                <svg class="select-arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="message">Décrivez votre projet</label>
+              <textarea id="message" name="message" rows="5" placeholder="Dites-nous en plus : superficie, style souhaité, délai, supports attendus…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              <span>Envoyer ma demande</span>
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note">Réponse garantie sous 24 h · Devis gratuit et sans engagement</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <span class="logo-mg">MG</span>
+            <span class="logo-studio">Studio</span>
+          </a>
+          <p class="footer-tagline">L'excellence visuelle<br />au service de votre architecture.</p>
+        </div>
+        <div class="footer-links-col">
+          <p class="footer-col-title">Navigation</p>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#methode">Méthode</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <p class="footer-col-title">Services</p>
+          <ul>
+            <li><a href="#contact">Rendus 3D Extérieurs</a></li>
+            <li><a href="#contact">Rendus 3D Intérieurs</a></li>
+            <li><a href="#contact">Plans sur-mesure</a></li>
+            <li><a href="#contact">Visites virtuelles 360°</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <p class="footer-col-title">Contact</p>
+          <ul>
+            <li><a href="mailto:contact@mg-studio.fr">contact@mg-studio.fr</a></li>
+            <li><a href="tel:+33600000000">+33 6 00 00 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MG Studio. Tous droits réservés.</p>
+        <p>Réalisé avec soin · Paris, France</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
